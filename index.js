@@ -2,6 +2,7 @@
 //Variables
 // ==========================
 const fs = require('fs');
+const util= require('util');
 
 // axios
 const axios = require("axios");
@@ -74,11 +75,14 @@ async function init() {
         // ajax call to github for avatar_url and email
         const gitHubURL = `https://api.github.com/users/${storeData.username}/repos?per_page=100`
         console.log(gitHubURL);
-        const gitInfo = await axios.get(gitHubURL).then(function(response){
+        const avatar = await axios.get(gitHubURL).then(function(response){
             console.log("===============");
-            console.log(gitInfo.avatar_url);
+            console.log(response.data.avatar_url);
         })
-
+        const email = await axios.get(gitHubURL).then(function(response){
+            console.log("===============");
+            console.log(response.data.email);
+        })
     }
     catch (err){
         return console.log(err);
