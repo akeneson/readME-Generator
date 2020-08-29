@@ -60,11 +60,17 @@ function promptQuestions(){
 }
 
 // function to initialize program
+// modified the async function to "async" function (from module 38)
 async function init() {
+    // try&catch from module 38
     try{
         console.log("Function init called");
-        // calls promptQuestions function and stores answers into store Data
+        // calls promptQuestions function and stores answers into "storeData"
         const storeData = await promptQuestions();
+
+        // ajax call to github for avatar_url and email
+        const gitHubURL = `https://api.github.com/users/${storeData.username}/repos?per_page=100`
+        console.log(gitHubURL);
     }
     catch (err){
         return console.log(err);
