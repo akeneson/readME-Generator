@@ -54,9 +54,21 @@ const questions = [
 function writeToFile(fileName, data) {
 }
 
-// function to initialize program
-function init() {
+// function to prompt questions
+function promptQuestions(){
+    return inquirer.prompt(questions);
+}
 
+// function to initialize program
+async function init() {
+    try{
+        console.log("Function init called");
+        // calls promptQuestions function and stores answers into store Data
+        const storeData = await promptQuestions();
+    }
+    catch (err){
+        return console.log(err);
+    }
 }
 
 // function call to initialize program
