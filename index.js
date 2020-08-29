@@ -3,6 +3,9 @@
 // ==========================
 const fs = require('fs');
 
+// axios
+const axios = require("axios");
+
 // modedule 33 inquirer
 const inquirer = require("inquirer");
 
@@ -71,6 +74,11 @@ async function init() {
         // ajax call to github for avatar_url and email
         const gitHubURL = `https://api.github.com/users/${storeData.username}/repos?per_page=100`
         console.log(gitHubURL);
+        const gitInfo = await axios.get(gitHubURL).then(function(response){
+            console.log("===============");
+            console.log(gitInfo.avatar_url);
+        })
+
     }
     catch (err){
         return console.log(err);
