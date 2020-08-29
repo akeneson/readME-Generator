@@ -48,8 +48,6 @@ const questions = [
         message: "Enter the licensing information of the application",
         choices: [
             "MIT", 
-            "APACHE",
-            "GPL",
             "Unlicense" 
         ],
         name: "license"

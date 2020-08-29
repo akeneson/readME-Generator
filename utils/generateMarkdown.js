@@ -1,3 +1,9 @@
+function grabLicense(license){
+  return `![License](https://img.shields.io/badge/${license}-blue.svg)`
+
+
+}
+
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -21,10 +27,10 @@ function generateMarkdown(data) {
 
   ## Usage
   ${data.usage}
-  ${data.license}
+  ${grabLicense(data.license)}
 
   ## Contributing
-  ${data.contributing}
+  ${data.contributin}
 
   ## Test
 
