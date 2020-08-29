@@ -3,12 +3,17 @@
 // ==========================
 const fs = require('fs');
 const util= require('util');
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // axios
 const axios = require("axios");
 
 // modedule 33 inquirer
 const inquirer = require("inquirer");
+
+// required for async await module 39
+// const readFileAsync = util.promisify(fs.readFile);
+// const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
 const questions = [
@@ -25,7 +30,8 @@ const questions = [
     {
         type: "input",
         message: "Enter instructions on how to install the application",
-        name: "installation"
+        name: "installation",
+        default: "npm install"
     },
     {
         type: "input",
@@ -34,7 +40,18 @@ const questions = [
     },
     {
         type: "input",
+        message: "What do I need to know about contributing",
+        name: "contributing"
+    },
+    {
+        type: "list",
         message: "Enter the licensing information of the application",
+        choices: [
+            "MIT", 
+            "APACHE",
+            "GPL",
+            "Unlicense" 
+        ],
         name: "license"
     },
     {
@@ -45,7 +62,8 @@ const questions = [
     {
         type: "input",
         message: "Describe the testing of the application",
-        name: "testing"
+        name: "testing",
+        default: "npm test"
     },
     {
         type: "input",
@@ -55,7 +73,16 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
+// changed to async function
+async function writeToFile(fileName, data) {
+    try{
+        console.log("\nwriteToFile function called");
+        // store answers to formulate the README
+        return fs.writeFileSync(fileName, data);
+    }
+    catch(err){
+        console.log(err);
+    }
 }
 
 // function to prompt questions
@@ -70,19 +97,27 @@ async function init() {
     try{
         console.log("Function init called");
         // calls promptQuestions function and stores answers into "storeData"
-        const storeData = await promptQuestions();
+        const storeData = await promptQuestions().then(answers=>{
+            console.log(answers);
+            writeToFile("generateREAD.md", generateMarkdown(answers));
+        
+        })
 
         // ajax call to github for avatar_url and email
-        const gitHubURL = `https://api.github.com/users/${storeData.username}/repos?per_page=100`
-        console.log(gitHubURL);
-        const avatar = await axios.get(gitHubURL).then(function(response){
-            console.log("===============");
-            console.log(response.data.avatar_url);
-        })
-        const email = await axios.get(gitHubURL).then(function(response){
-            console.log("===============");
-            console.log(response.data.email);
-        })
+        // const gitHubURL = `https://api.github.com/users/${storeData.username}/repos?per_page=100`
+        // console.log(gitHubURL);
+        // const avatar = await axios.get(gitHubURL).then(function(response){
+        //     console.log("===============");
+        //     console.log(response.data.avatar_url);
+        // })
+        // const email = await axios.get(gitHubURL).then(function(response){
+        //     console.log("===============");
+        //     console.log(response.data.email);
+        // })
+
+        // calling function writeToFile
+        
+
     }
     catch (err){
         return console.log(err);
