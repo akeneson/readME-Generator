@@ -1,6 +1,6 @@
-# y
+# k
   ## Description
-  y
+  k
   ---
   ## Table of Contents
 
@@ -14,12 +14,13 @@
  ## Installation
   To in stall this blah
   ```
-  y
+  npm install
   ```
 
   ## Usage
-  y
-  ![License](https://img.shields.io/badge/MIT-blue.svg)
+  k
+
+  [![License](https://img.shields.io/badge/MIT-blue.svg)]
 
   ## Contributing
   undefined
@@ -27,7 +28,7 @@
   ## Test
 
   ```
-  k
+  npm test
   ```
 
   ## Questions

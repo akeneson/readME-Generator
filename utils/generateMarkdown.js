@@ -1,5 +1,5 @@
 function grabLicense(license){
-  return `![License](https://img.shields.io/badge/${license}-blue.svg)`
+  return `[![License](https://img.shields.io/badge/${license}-blue.svg)]`
 
 
 }
@@ -27,6 +27,7 @@ function generateMarkdown(data) {
 
   ## Usage
   ${data.usage}
+
   ${grabLicense(data.license)}
 
   ## Contributing
