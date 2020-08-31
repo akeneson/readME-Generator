@@ -34,6 +34,9 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
+  ## License
+  ${data.title} is ${data.license.name}
+
   ## Contributing
   ${data.contributing}
 
@@ -46,8 +49,6 @@ function generateMarkdown(data) {
   ## Questions
   For questions regarding this application, please email: 
   ${data.email}
- 
-
 
 
 

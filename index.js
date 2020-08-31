@@ -140,7 +140,7 @@ async function init() {
         // calls promptQuestions function and stores answers into "storeData"
         const storeData = await promptQuestions().then(answers=>{
             console.log(answers);
-            writeToFile("generateREAD.md", generateMarkdown(answers));
+            writeToFile("README.md", generateMarkdown(answers));
         
         })
 
