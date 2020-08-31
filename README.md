@@ -1,4 +1,4 @@
-
+z
   
   [![License](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
@@ -7,6 +7,7 @@
   # readME Generator
   ## Description
   readME Generator is an application that will write your README for any project with the professional markdowns. Simply answer the prompted questions and it will automatically generate a file for you! Use this on every project to save your time and the headache of looking up appropriate markdowns!
+  ![Image of readME Generator](Screen Shot 2020-08-31 at 11.23.12.png)
   ---
   ## Table of Contents
 
