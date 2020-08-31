@@ -14,7 +14,7 @@
  ## Installation
   To in stall this blah
   ```
-  npm install
+  k
   ```
 
   ## Usage
@@ -25,7 +25,7 @@
   
 
   ## Contributing
-  k
+  
 
   ## Test
 

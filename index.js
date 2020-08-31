@@ -78,7 +78,7 @@ const questions = [
 				name: 'BSD 3',
 				value: {
 					name: 'BSD 3',
-					link: 'License-BSD%203--Clause',
+					link: 'BSD%203--Clause',
 					url: 'https://opensource.org/licenses/BSD-3-Clause',
 					color: 'orange',
 				},
