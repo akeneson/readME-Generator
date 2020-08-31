@@ -51,7 +51,7 @@ const questions = [
 				name: 'Apache 2.0 License',
 				value: {
 					name: 'Apache 2.0 License',
-					link: 'License-Apache%202.0',
+					link: 'Apache',
 					url: 'https://opensource.org/licenses/Apache-2.0',
 					color: 'blue',
 				},
