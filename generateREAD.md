@@ -20,10 +20,10 @@
   ## Usage
   k
 
-  [![License](https://img.shields.io/badge/MIT-blue.svg)]
+  [![License](https://img.shields.io/badge/Apache 2.0 License-blue)]
 
   ## Contributing
-  undefined
+  k
 
   ## Test
 

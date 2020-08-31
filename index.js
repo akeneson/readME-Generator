@@ -47,8 +47,51 @@ const questions = [
         type: "list",
         message: "Enter the licensing information of the application",
         choices: [
-            "MIT", 
-            "Unlicense" 
+            {
+				name: 'Apache 2.0 License',
+				value: {
+					name: 'Apache 2.0 License',
+					link: 'License-Apache%202.0',
+					url: 'https://opensource.org/licenses/Apache-2.0',
+					color: 'blue',
+				},
+			},
+			{
+				name: 'MIT',
+				value: {
+					name: 'MIT',
+					link: 'MIT',
+					url: 'https://opensource.org/licenses/MIT',
+					color: 'yellow',
+				},
+			},
+			{
+				name: 'GPL 3.0',
+				value: {
+					name: 'GPL 3.0',
+					link: 'GPLv3',
+					url: 'https://www.gnu.org/licenses/gpl-3.0',
+					color: 'blue',
+				},
+			},
+			{
+				name: 'BSD 3',
+				value: {
+					name: 'BSD 3',
+					link: 'License-BSD%203--Clause',
+					url: 'https://opensource.org/licenses/BSD-3-Clause',
+					color: 'orange',
+				},
+			},
+			{
+				name: 'Unlicense',
+				value: {
+					name: 'Unlicense',
+					link: 'Unlicense',
+					url: 'http://unlicense.org/',
+					color: 'blue',
+				},
+			},
         ],
         name: "license"
     },
