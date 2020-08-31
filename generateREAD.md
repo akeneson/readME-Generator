@@ -20,7 +20,9 @@
   ## Usage
   k
 
-  ![License](https://img.shields.io/badge/License-License-Apache%202.0-blue)
+  [![License](https://img.shields.io/badge/License-License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+  
 
   ## Contributing
   
@@ -28,7 +30,7 @@
   ## Test
 
   ```
-  npm test
+  k
   ```
 
   ## Questions

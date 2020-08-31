@@ -1,5 +1,7 @@
 function grabLicense(license){
-  return `![License](https://img.shields.io/badge/License-${license.link}-${license.color})`;
+  return `[![License](https://img.shields.io/badge/License-${license.link}-${license.color}.svg)](${license.url})
+
+  `;
 
 
 }
