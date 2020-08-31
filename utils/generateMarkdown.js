@@ -1,5 +1,5 @@
 function grabLicense(license){
-  return `[![License](https://img.shields.io/badge/license-${license.name}-${license.color}.svg)](${license.url})
+  return `[![License](https://img.shields.io/badge/license-${license.link}-${license.color}.svg)](${license.url})
 
   `;
 
@@ -8,7 +8,10 @@ function grabLicense(license){
 
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return ` ${grabLicense(data.license)}
+  return `
+  
+  ${grabLicense(data.license)}
+
   # ${data.title}
   ## Description
   ${data.description}
