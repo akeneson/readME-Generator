@@ -6,7 +6,7 @@
 
   # readME Generator
   ## Description
-  readME Generator is an application that will write your README for any project with the professional markdowns. Simply answer the prompted questions and it will automatically generate a file for you! Use this on every project to save you time and the headache of looking up appropriate markdowns!
+  readME Generator is an application that will write your README for any project with the professional markdowns. Simply answer the prompted questions and it will automatically generate a file for you! Use this on every project to save your time and the headache of looking up appropriate markdowns!
   ---
   ## Table of Contents
 
@@ -24,13 +24,13 @@
   ```
 
   ## Usage
-  Open the terminal, type in "node index", and answer the questions. Once done, the application will generate the README.md file.
+  Open the terminal window, type in "node index", and answer the questions. Once done, the application will generate the README.md file.
 
   ## License
   readME Generator is Unlicense
 
   ## Contributing
-  Not needed at the moment, but thank you for your support and interest!
+  Not needed at this time but thank you for the support and interest!
 
   ## Test
 
