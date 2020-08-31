@@ -7,7 +7,7 @@ z
   # readME Generator
   ## Description
   readME Generator is an application that will write your README for any project with the professional markdowns. Simply answer the prompted questions and it will automatically generate a file for you! Use this on every project to save your time and the headache of looking up appropriate markdowns!
-  ![Image of readME Generator](Screen Shot 2020-08-31 at 11.23.12.png)
+  ![Image of readME Generator](https://github.com/akeneson/readME-Generator/blob/master/Screen%20Shot%202020-08-31%20at%2011.23.12.png?raw=true)
   ---
   ## Table of Contents
 
