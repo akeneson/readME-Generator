@@ -1,13 +1,12 @@
-z
+
   
   [![License](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
   
 
-  # readME Generator
+  # Open Weather API
   ## Description
-  readME Generator is an application that will write your README for any project with the professional markdowns. Simply answer the prompted questions and it will automatically generate a file for you! Use this on every project to save your time and the headache of looking up appropriate markdowns!
-  ![Image of readME Generator](https://github.com/akeneson/readME-Generator/blob/master/Screen%20Shot%202020-08-31%20at%2011.23.12.png?raw=true)
+  The application allows users to search the weather to plan their day or week. The users can switch between past searched cities for efficient planning.
   ---
   ## Table of Contents
 
@@ -21,22 +20,22 @@ z
  ## Installation
   To in stall this blah
   ```
-  npm install
+  No install required.
   ```
 
   ## Usage
-  Open the terminal window, type in "node index", and answer the questions. Once done, the application will generate the README.md file.
+  Simply click on the link and enter the city in the search bar.
 
   ## License
-  readME Generator is Unlicense
+  Open Weather API is Unlicense
 
   ## Contributing
-  Not needed at this time but thank you for the support and interest!
+  No contributions needed at this time. Thank you for your ongoing support.
 
   ## Test
 
   ```
-  npm test
+  None
   ```
 
   ## Questions
